@@ -30,9 +30,9 @@ def send_report():
 
     client = boto3.client('ses', region_name='us-east-1')
     response = client.send_email(
-        Source='ksackett@newrelic.com',
+        Source='sender@website.com',
         Destination={
-            'ToAddresses':  ['csre@newrelic.com'
+            'ToAddresses':  ['recipient@website.com'
             ]
         },
         Message={
