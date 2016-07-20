@@ -21,3 +21,6 @@ Example Output:
 │ cluster-number-nine                    │ 10           │ c4.2xlarge  │ $ 0.419            │ $ 100.56           │ $ 3,016.80           │ $ 36,201.60         │
 │ cluster-number-ten                     │ 7            │ c4.2xlarge  │ $ 0.419            │ $ 70.39            │ $ 2,111.76           │ $ 25,341.12         │
 └────────────────────────────────────────┴──────────────┴─────────────┴────────────────────┴────────────────────┴──────────────────────┴─────────────────────┘</code></pre>
+
+####autosnapshot\_rds\_instances.py
+Automatically creates DB Snapshots of all RDS instances. During each run of the script, all snapshots created during the script's last run will be automatically removed to ensure that all snapshots are recent. Designed to be run at regular intervals.
