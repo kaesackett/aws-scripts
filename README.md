@@ -1,10 +1,10 @@
-##AWS Scripts
+<h2>AWS Scripts</h2>
 
-####identify\_unused\_aws\_resources.py
-Search AWS for resources that are not in use, are underutilized, or are legacy resources that could be decommissioned (wasting money!). Outputs an HTML report of its findings. Written in Python 3.5.
+<h4>identify\_unused\_aws\_resources.py</h4>
+<p>Search AWS for resources that are not in use, are underutilized, or are legacy resources that could be decommissioned (wasting money!). Outputs an HTML report of its findings. Written in Python 3.5.<p>
 
-####identify\_most\_expensive\_clusters.py
-Identify the most expensive clusters in AWS and return a table of results, ranking them from most to least expensive. Useful for making informed decisions about purchasing reserved instances. Pass command-line arguments to tailor output. This script supports execution with both Python 2 and 3.
+<h4>identify\_most\_expensive\_clusters.py</h4>
+<p>Identify the most expensive clusters in AWS and return a table of results, ranking them from most to least expensive. Useful for making informed decisions about purchasing reserved instances. Pass command-line arguments to tailor output. This script supports execution with both Python 2 and 3.<p>
 
 Example Output:
 <pre><code>┌Top 10 Clusters by Cost─────────────────┬──────────────┬─────────────┬────────────────────┬────────────────────┬──────────────────────┬─────────────────────┐
@@ -22,5 +22,5 @@ Example Output:
 │ cluster-number-ten                     │ 7            │ c4.2xlarge  │ $ 0.419            │ $ 70.39            │ $ 2,111.76           │ $ 25,341.12         │
 └────────────────────────────────────────┴──────────────┴─────────────┴────────────────────┴────────────────────┴──────────────────────┴─────────────────────┘</code></pre>
 
-####autosnapshot\_rds\_instances.py
-Automatically creates DB Snapshots of all RDS instances. During each run of the script, all snapshots created during the script's last run will be automatically removed to ensure that all snapshots are recent. Designed to be run at regular intervals.
+<h4>autosnapshot\_rds\_instances.py</h4>
+<p>Automatically creates DB Snapshots of all RDS instances. During each run of the script, all snapshots created during the script's last run will be automatically removed to ensure that all snapshots are recent. Designed to be run at regular intervals.</p>
